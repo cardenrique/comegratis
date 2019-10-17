@@ -1,3 +1,12 @@
+{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.logo{
+  background-color: white;
+}
+.navbar{
+  width: 100%;
+}
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
     position: center;
