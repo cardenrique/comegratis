@@ -13,32 +13,42 @@
 
 
 <body>
-  <!-- Nav Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-flex justify-content-around">
-    <a class="navbar-brand" href="./index.html">Come Gratis</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="./pages/nosotros.html">Acerca de Nosotros <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/datos.html">Datos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/preguntas.html">Preguntas Frecuentes</a>
-        </li>
-        <li class="nav-item">
-          <button type="button" class="btn btn-warning">Se parte de nosotros</button>
-        </li>
-      </ul>
+  <header class="header fixed-top">
+    <!-- Logo -->
+    <div class="logo d-flex justify-content-center">
+      <a href="./index.html">
+        <img src="./assets2/img/logoseguido.jpg" alt="come gratis">
+      </a>
     </div>
-  </nav>
-  <!--Nav-->
-
+    <!-- /Logo -->
+    <!-- Nav Bar -->
+    <!-- checar espacios -->
+    <div class="pnavbar d-flex justify-content-around">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/datos.html">Datos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/preguntas.html">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bg-warning rounded" href="./pages/ingresa.html">Se parte de nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Termina Nav Bar -->
   <main>
 
     <!-- The video -->
@@ -55,6 +65,7 @@
     </div>
 
     <!-- The cards -->
+    <!-- Card1 -->
     <div class="card mb-3" style="max-width: 540px;">
       <div class="row no-gutters">
         <div class="col-md-4 order-12">
@@ -70,7 +81,8 @@
         </div>
       </div>
     </div>
-
+    <!-- /card1 -->
+    <!-- card2 -->
     <div class="card mb-3" style="max-width: 540px;">
       <div class="row no-gutters">
         <div class="col-md-4 order-12">
@@ -86,9 +98,8 @@
         </div>
       </div>
     </div>
-
-
-
+    <!-- /card2 -->
+    <!-- cardnosotros -->
     <div class="card-deck">
       <div class="card">
         <img src="..." class="card-img-top" alt="...">
@@ -111,18 +122,11 @@
           <small class="text-muted">Last updated 3 mins ago</small>
         </div>
       </div>
-
-
-
-
-
-
-
-
+      <!-- /cardnosotros -->
   </main>
 
   <footer>
-    <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

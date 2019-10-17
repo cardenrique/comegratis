@@ -1,5 +1,15 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.logo{
+    background-color: white;
+}
+.navbar{
+    width: 100%;
+}
 .titulo{
     /* border: solid 2px green; */
+    padding-top: 40px;
 }
 .titulonombre{
    /*  border: solid 2px green; */
