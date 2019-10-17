@@ -12,18 +12,19 @@
     position: center;
     right: 0;
     bottom: 0;
-    min-width: 80%;
-    min-height: 80%;
+    min-width: 100%;
+    min-height: 100%;
   }
   
   /* Add some content at the bottom of the video/page */
   .content {
-    position: fixed-bottom;
+    position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
+    z-index: 2;
   }
   
   /* Style the button used to pause/play the video */
@@ -41,4 +42,36 @@
     background: #ddd;
     color: black;
   }
+  .imgc{
+    height: 75vh;
+}
+.card-img-top{
+   border-radius: 50%;
+   width: 150px;
+   height: 150px; 
+}
+.tituloc{
+    font-size: 45px;
+}
+.subtituloc{
+    font-size: 20px;
+}
+.btn{
+    font-size: 20px;
+}
+.card-title{
+    font-size: 35px;
+    color: grey;
+}
+.btnv{
+    font-size: 17px;
+    border-radius: 4px;
+    width: 150px;
+    height: 40px;
+}
+.card-img{
+    width: 250px;
+    height: 250px; 
+ }
+  
 
