@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="header fixed-top">
+    <header class="header">
         <!-- Logo -->
         <div class="logo d-flex justify-content-center">
             <a href="../index.html">
@@ -42,8 +42,117 @@
                             <a class="nav-link" href="./preguntas.html">Preguntas Frecuentes </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bg-warning rounded active" href="./ingresa.html">Se parte de
-                                nosotros<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="./ingresa.html">Ingresa </a>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary d-none" data-toggle="modal"
+                                data-target="#exampleModalLong" id="darAlta">
+                                Dar de alta
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <p>
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputEmail4">Email</label>
+                                                            <input type="email" class="form-control" id="inputEmail4"
+                                                                placeholder="Email">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputPassword4">Password</label>
+                                                            <input type="password" class="form-control"
+                                                                id="inputPassword4" placeholder="Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputAddress">Address</label>
+                                                        <input type="text" class="form-control" id="inputAddress"
+                                                            placeholder="1234 Main St">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputAddress2">Address 2</label>
+                                                        <input type="text" class="form-control" id="inputAddress2"
+                                                            placeholder="Apartment, studio, or floor">
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputCity">City</label>
+                                                            <input type="text" class="form-control" id="inputCity">
+                                                        </div>
+                                                        <div class="form-group col-md-4">
+                                                            <label for="inputState">State</label>
+                                                            <select id="inputState" class="form-control">
+                                                                <option selected>Choose...</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-2">
+                                                            <label for="inputZip">Zip</label>
+                                                            <input type="text" class="form-control" id="inputZip">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Check me out
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                                </form>
+                                            </p>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Finish modal -->
+
+                            <!-- Start Login -->
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                        anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </form>
+
+
+                            <!-- Finish Login -->
+
+
                         </li>
                     </ul>
                 </div>
@@ -52,72 +161,30 @@
     </header>
     <!-- Termina Nav Bar -->
     <main>
+
+
+
+        <!-- The form -->
+
         <div>
-            <p ingresa tu nombre></p>
-            <input id="inputnombre" type="text" placeholder="nombre y apellido">
+            <p ingresa tu edad></p>
+            <input id="edad" type="number" placeholder="ingresa tu edad">
+
+            <p ingresa tu ciudad></p>
+            <input id="ciudad" type="text" placeholder="ingresa tu ciudad">
 
 
-            <p ingresa tu telefono></p>
-            <input id="inputtelefono" type="text" placeholder="telefono">
-
-            <p ingresa tu email></p>
-            <input id="inputemail" type="text" placeholder="email">
-
-            <p id="parrafonombre"></p>
-            <p id="parratelefono"></p>
-            <p id="email"></p>
-
-            <button></button>
-
-            <FORM name=form action="TU_PAGINA_WEB.HTML">
-
-                <P>Usuario: <INPUT type=text name=login>
-                    <P>Contrasena: <INPUT type=password name=password>
-                        <INPUT onclick=go() type=button value=Acceder>
-
-            </FORM>
 
 
+            <p id="parrafoedad"></p>
+            <p id="parrafociudad"></p>
+
+            <button id="botonIngresa">Ingresa</button>
+
+            <p class="d-none" id="error">Solamente pueden ingresar los usuarios mayores de 18 y que residan en CDMX!</p>
 
         </div>
 
-
-        <div id="container">
-            <div id="tabs">
-                <p id="lt" class="tabs" onclick="loginTabFun()">Log in</p>
-                <p id="rt" class="tabs" onclick="regTabFun()">Register</p>
-
-                <div id="clear"></div>
-            </div>
-
-            <div id="cont">
-                <div id="login" class="comm">
-                    <h3>Sign in</h3>
-
-                    <input id="se" type="email" placeholder="Email" required />
-                    <input id="sp" type="password" placeholder="Password" required />
-                    <input type="submit" onclick="login()" value="Submit" />
-
-                    <p onclick="forTabFun()">Forget Password?</p>
-                </div>
-                <div id="register" class="comm">
-                    <h3>Register</h3>
-
-                    <input id="re" type="email" placeholder="Email" required />
-                    <input id="rp" type="password" placeholder="Password" required />
-                    <input id="rrp" type="password" placeholder="Re write Password" required />
-                    <input type="submit" onclick="register()" value="Submit" />
-
-                </div>
-                <div id="forgot" class="comm">
-                    <h3>Forgot Password</h3>
-                    <div>
-                        <input id="fe" type="email" placeholder="Email" required />
-                        <input type="submit" onclick="forgot()" value="Submit" />
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
