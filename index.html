@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./main.css">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
   <title>Comida Gratis</title>
 </head>
-
 
 <body>
   <header class="header fixed-top">
@@ -24,7 +24,7 @@
     <!-- Nav Bar -->
     <!-- checar espacios -->
     <div class="pnavbar d-flex justify-content-around">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white d-flex justify-content-start">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -50,102 +50,133 @@
   </header>
   <!-- Termina Nav Bar -->
   <main>
-
     <!-- The video -->
-    <video autoplay muted loop id="myVideo">
+    <video class="col-md d-none d-xs-none d-lg-block" autoplay muted loop id="myVideo">
       <source src="./assets/video/rain.mp4" type="video/mp4">
     </video>
-
     <!-- Optional: some overlay text to describe the video -->
-    <div class="content">
-      <h1>Heading</h1>
-      <p>Lorem ipsum...</p>
+    <div class="content col-md d-none d-xs-none d-lg-block">
+      <h1>Come gratis</h1>
+      <p>Nace de la necesidad de las personas de cuestioanarse cómo darle un buen
+        <br> uso al "desperdicio" de su comida diaria.</p>
       <!-- Use a button to pause/play the video with JavaScript -->
-      <button id="myBtn" onclick="myFunction()">Pause</button>
+      <button id="myBtn" onclick="myFunction()">Pausa</button>
     </div>
-
+    <hr width="90%">
+    <!-- Imagen para xs -->
+    <!--  <div class="imgninas d-xs-block d-lg-none">
+            <img src="./assets2/img/ninaspri.jpg" alt="nosotros">
+          </div> -->
+    <!-- /Imagen para xs -->
     <!-- The cards -->
-    <!-- Card1 -->
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row no-gutters">
-        <div class="col-md-4 order-12">
-          <img src="..." class="card-img" alt="...">
+    <div class="cardi col-sm-12 mt-lg-0 mb-3 ml-5 mr-5">
+      <div class="row no-gutters text-start align-items-center">
+        <div class=" col-sm-8 col-md-4 order-12 col-md d-none d-xs-none d-lg-block">
+          <img src="./assets2/img/foodtruck.jpg" class="card-img" alt="FoodTruck">
         </div>
-        <div class="col-md-8 order-2">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="col-md-8">
+          <div class="card-body order-2">
+            <h5 class="card-title">Evento Food Truck</h5>
+            <p class="card-text">¿Estás listo para el mejor evento de Food Trucks en la Ciudad de México? Entra y
+              descubre cómo "Come gratis" estará presente.</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- /card1 -->
-    <!-- card2 -->
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row no-gutters">
-        <div class="col-md-4 order-12">
-          <img src="..." class="card-img" alt="...">
+    <!-- /Card con imagen -->
+    <hr width="90%">
+    <!-- Card con imagen 2 -->
+    <div class="cardi border-light mb-3 ml-5 mr-5">
+      <div class="row no-gutters text-end align-items-center">
+        <div class="col-md-4">
+          <img src="./assets2/img/receta.jpg" class="card-img" alt="recetas">
         </div>
-        <div class="col-md-8 order-2">
+        <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Descúbre las mejores recetas</h5>
+            <p class="card-text">Nos reunimos con uno de los mejores Chefs en México de comida Indú para traerte las
+              mejores receteas.</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- /card2 -->
+    <!-- /Card con imagen 2 -->
     <!-- cardnosotros -->
-    <div class="card-deck">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
+    <div class="container mt-5 mb-5 pb-5 pt-5">
+      <div class="row text-center ">
+        <div class="card border-white col-md align-items-center" style="width: 18rem;">
+          <img src="./assets2/img/manicon.png" class="card-img-top img-fluid " alt="Responsive image">
+          <div class="card-body">
+            <h5 class="card-title">Enrique</h5>
+            <p class="card-text">Contador en México especializado en ...</p>
+            <button type="button" class="btnv btn-secondary">Conóce más>></button>
+          </div>
         </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
+        <div class="card border-white col-md align-items-center" style="width: 18rem;">
+          <img src="./assets2/img/girlicon.png" class="card-img-top" alt="Paulina">
+          <div class="card-body">
+            <h5 class="card-title">Paulina</h5>
+            <p class="card-text">Egresada de administración de empresas especilizada en negocios digitales.</p>
+            <button type="button" class="btnv btn-secondary">Conóce más>></button>
+          </div>
+        </div>
+        <div class="card border-white col-md align-items-center" style="width: 18rem;">
+          <img src="./assets2/img/boyicon.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jesús</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <button type="button" class="btnv btn-secondary">Conóce más>></button>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
-      </div>
-      <!-- /cardnosotros -->
+    </div>
+    <!-- /cardnosotros -->
   </main>
-
-  <footer>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#"> <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#"></a>
-          <a class="nav-item nav-link" href="#"></a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-          <a class="nav-item nav-link" href="#">Copyright</a>
-
+  <footer class="align-items-end">
+    <!--  Footer -->
+    <!-- Social media -->
+    <div class="redes col-xs-6 col-sm-8 col-md-10 col-lg-12">
+      <a href="#">
+        <img src="./assets2/img/instagramicon.jpg" alt="instagram" class="instagram">
+      </a>
+      <a href="#">
+        <img src="./assets2/img/facebookicon.jpg" alt="facebook" class="facebook">
+      </a>
+      <a href="#">
+        <img src="./assets2/img/mailicon.jpg" alt="mail" class="mail">
+      </a>
+    </div>
+    <!--  /Social media -->
+    <div class="card-footer text-muted d-flex justify-content-around">
+      <div class="footer">
+        <div class="Footertitulo">
+          <a href="#">Conoce más sobre nosotros</a>
+        </div>
+        <div class="subtitulo d-flex flex-column">
+          <a href="#">Documental</a>
+          <a href="#">Reportajes</a>
+          <a href="#">TED Talk</a>
         </div>
       </div>
-    </nav>
-
+      <div class="footer">
+        <div class="Footertitulo d-flex justify-content-center">
+          <a href="#">Casos de Éxito</a>
+        </div>
+        <div class="subtitulo d-flex flex-column align-items-center">
+          <a href="#">India</a>
+          <a href="#">México</a>
+          <a href="#">Perú</a>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="Footertitulo d-flex justify-content-end">
+          <a href="#">Dona a nuestra fundación</a>
+        </div>
+      </div>
+    </div>
+    <!-- / Footer -->
   </footer>
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

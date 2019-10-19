@@ -1,3 +1,8 @@
+.carousel-inner{
+    width: 600px;
+    height: auto;
+}
+/* nuevo */
 *{
     font-family: 'Nanum Gothic', sans-serif;
 }
@@ -6,19 +11,24 @@
 }
 .navbar{
     width: 100%;
+    justify-content: space-around;
+
+}
+.navbar-nav{
+    justify-content: space-around;
+    width: 100%;
+
 }
 .titulo{
     /* border: solid 2px green; */
     padding-top: 40px;
+    
 }
 .titulonombre{
    /*  border: solid 2px green; */
     margin-top: 45px;
 }
-.carousel-inner{
-    width: 600px;
-    height: auto;
-}
+
 .redes{
   /*   border: solid 2px green; */
     width: 100%;
@@ -37,14 +47,25 @@
     width: 3em;
 }
 .card-footer{
-    /* border: solid 2px pink; */
+    width: 100%;
+    height: auto;
+    background-color: rgba(253, 207, 2, 0.781);
 }
 .footer{
     /* border: solid 2px blue; */
-    width: 300px;
-    height: 100px;
-    color: black;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    color: black !important;
+    padding-block: 10px;
 }
-.Footertitulo{
+.Footertitulo > a{
     font-size: 18px;
+    text-decoration: none;
+    color: black !important;
+}
+.subtitulo > a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black !important;
 }
